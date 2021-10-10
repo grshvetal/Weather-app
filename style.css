@@ -7,7 +7,7 @@ body {
   background: #87cefa; 
 }
 #block {
-  margin-top: 75px;
+  margin-top: 67px;
   border-radius: 10px;
   padding: 100px; 
   color: whitesmoke;
@@ -16,7 +16,7 @@ body {
 /* ------------------------------------------------------ */
 .acrylic {
   /* Parent background + Gaussian blur */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(10px);
 
   /* Exclusion blend */
