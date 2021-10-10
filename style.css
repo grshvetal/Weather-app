@@ -17,7 +17,7 @@ body {
 .acrylic {
   /* Parent background + Gaussian blur */
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3px);
 
   /* Exclusion blend */
   background-blend-mode: exclusion;
