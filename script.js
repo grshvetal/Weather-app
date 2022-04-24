@@ -115,6 +115,10 @@ $("document").ready(function () {
             break;
         }
         $("body").css("background-image", background);
+        //Dynamic favicon
+        var faviconLink = background.slice(4, background.length-1);
+        console.log(faviconLink);
+        $("link[rel='shortcut icon']").attr("href", faviconLink);
 
         // Fehrenheit button action
         $("#btn_fahrenheit").on("click", function () {
