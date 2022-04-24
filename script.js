@@ -2,6 +2,7 @@ $("document").ready(function () {
   var latitude, longitude, place, location_api_link, weather_api_link;
 
   //-----getting geolocation data -------------------------
+
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       latitude = position.coords.latitude;
@@ -34,6 +35,7 @@ $("document").ready(function () {
       }); 
 
       //---- Using the Weather API to get the weather data
+
       weather_api_link =
         "https://api.forecast.io/forecast/a00ba813edd03ccdf7574542c6bbbe69/" +
         latitude +
@@ -54,7 +56,9 @@ $("document").ready(function () {
         $("#icon").html(icon);
         $("#summary").html(summary);
         $("#temperature").html(temperature);
-        // changing background according to current weather  
+
+        // changing background according to current weather
+        
         var background;
         switch (weatherdata.currently.icon) {
           case "clear-day":
@@ -112,7 +116,7 @@ $("document").ready(function () {
         }
         $("body").css("background-image", background);
 
-        // Fehrenhiet button action
+        // Fehrenheit button action
         $("#btn_fahrenheit").on("click", function () {
           $("#temperature").html(temperatureF + "°F");
           $("#btn_fahrenheit").removeClass("btn_off");
