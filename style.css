@@ -31,7 +31,6 @@ body {
 
 /* ------------------------------------------------------- */
 #btn_celsius {
-  /* border: 1px solid rgba(255, 255, 255, 0.6); */
   border: none;
   border-radius: 50%;
 
@@ -40,29 +39,24 @@ body {
 }
 
 #btn_fahrenheit {
-  /* border: 1px solid rgba(255, 255, 255, 0.6); */
   border: none;
   border-radius: 50%;
 }
 
 .btn_on {
-  /* background-color: rgba(90, 247, 142, 0.2); */
   background-color: rgba(0, 255, 0, 0.3);
 }
 
 .btn_off {
-  /* background-color: rgba(255, 92, 87, 0.2); */
   background-color: rgba(255, 0, 0, 0.3);
 }
 
 a {
-  /*   color: #aa3939; */
   color: red;
 }
 
 a:visited,
 a:hover {
-  /*   color: #aa3939; */
   color: red;
 }
 
