@@ -143,7 +143,7 @@ $("document").ready(function () {
   // Setting a background image according to day-night
   var date = new Date();
   var current_hour = date.getHours();
-  if (current_hour >= 18 || current_hour <= 7) {
+  if (current_hour >= 18 || current_hour <= 5) {
     $("body").css("background", "#282a36");
     $("body").css("color", "yellow");
   } 
